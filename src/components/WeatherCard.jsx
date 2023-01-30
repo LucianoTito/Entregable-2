@@ -14,7 +14,7 @@ const WeatherCard = ({weather, temperature}) => {
         <h2 className='card__subtitle'>{weather?.name}, {weather?.sys.country}</h2>
         <div className='card__body'>
             <div className='card__img-container'>
-            <img className='card__img' publicalt="" />
+            <img className='card__img' src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`} alt="" />
             </div>
             <section className='card__info'>
                 <h3 className='card__info-title'>"{weather?.weather[0].description}"</h3>
